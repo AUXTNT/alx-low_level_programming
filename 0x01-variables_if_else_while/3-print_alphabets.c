@@ -12,7 +12,7 @@ char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	for (i = 0; i < 52; i++)
 	{
-		putvhar(alp[i]);
+		putchar(alp[i]);
 	}
 	putchar('\n');
 	return (0);
