@@ -24,7 +24,7 @@ int main(void)
 		} else if (i == 1)
 		{
 			printf("%d", i);
-		} else 
+		} else
 		{
 			printf(" %d", i);
 		}
@@ -33,5 +33,3 @@ int main(void)
 
 	return (0);
 }
-		
-
