@@ -8,7 +8,7 @@ void print_binary(unsigned long int n)
 {
 	int i, compute = 0;
 	unsigned long int n
-		binary = NULL;
+		_putchar = NULL;
 
 	for (i = 63; i >= 0; i--)
 	{
@@ -16,7 +16,7 @@ void print_binary(unsigned long int n)
 
 		if (cursor & 1)
 		{
-			binary((n & 1) + '0');
+		putchar((n & 1) + '0');
 			compute++;
 		}
 	}
