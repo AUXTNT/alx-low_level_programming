@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * get_bit - an index in a decimal number returns the value of a bit
@@ -9,12 +9,30 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int bit_val;
+	if (index >= sizeof(unsigned long int) * 8) 
+	{
+	// Invalid index 
+		 return -1;
+	}
 
-	if (index > 63)
-		return (-1);
+	unsigned long int mask = 1UL << index;
+	return (n & mask) ? 1 : 0;
+}
 
-	bit_val = (n >> index) & 1;
+int main()
+{
+	unsigned long int number = 137; // Example number
+	unsigned int index = 4; // Example index
 
-	return (bit_val);
+	int bitValue = get_bit(number, index);
+	if (bitValue == -1) 
+	{
+		printf("Error: Invalid index\n");
+	}
+	else 
+	{
+		printf("Bit value at index %d: %d\n", index, bitValue);
+	}
+
+	return 0;
 }
