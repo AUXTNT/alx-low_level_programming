@@ -1,15 +1,12 @@
 #ifndef LIST_H
 #define LIST_H
 
-<<<<<<< HEAD
 #include <stdio.h>
-=======
 #include <stdlib.h>
->>>>>>> 41ccd0e54f964ec32a469ae7cc6cfcfe1987b726
 #include "lists.h"
 
 /**
- * struct listint_s - the singly linked list
+ *struct listint_s - the singly linked list
  * @h: integer
  * @next: the next node pointer
  * Description: structured singly linked list to the node
@@ -38,7 +35,3 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 listint_t *find_listint_loop(listint_t *head);
 
 #endif
-<<<<<<< HEAD
-
-=======
->>>>>>> 41ccd0e54f964ec32a469ae7cc6cfcfe1987b726
